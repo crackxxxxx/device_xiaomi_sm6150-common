@@ -4,11 +4,19 @@ vendor.bluetooth.soc=cherokee
 # Charger
 ro.charger.enable_suspend=true
 
+#Prevent the deactivation of preloading graphic lib
+ro.zygote.disable_gl_preload=false
+
 # CNE
 persist.vendor.cne.feature=1
 
 # FUSE
 persist.sys.fuse.passthrough.enable=true
+
+# Graphics
+debug.composition.type=gpu
+persist.sys.composition.type=gpu
+ro.hwui.use_vulkan=false
 
 # IMS
 persist.vendor.qti.telephony.vt_cam_interface=2
