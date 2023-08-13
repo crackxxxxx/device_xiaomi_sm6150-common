@@ -128,6 +128,9 @@ persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 ro.telephony.iwlan_operation_mode=legacy
 
+# DEX
+persist.sys.dalvik.multithread=true
+
 # DPM
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.nsrm.bkg.evt=3955
@@ -137,10 +140,11 @@ persist.vendor.dpmhalservice.enable=1
 debug.egl.hw=0
 debug.sf.enable_gl_backpressure=1
 debug.mdpcomp.logs=0
-debug.sf.disable_client_composition_cache=1
+debug.sf.disable_client_composition_cache=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.enable_hwc_vds=1
-debug.sf.hw=0
+debug.sf.hw=1
+debug.sf.latch_unsignaled=true
 debug.sf.predict_hwc_composition_strategy=0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
@@ -172,6 +176,9 @@ vendor.display.qdcm.mode_combine=1
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
 persist.sys.sf.color_mode=9
+
+# FS-verity
+ro.apk_verity.mode=2
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
