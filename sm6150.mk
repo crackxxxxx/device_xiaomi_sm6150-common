@@ -292,6 +292,9 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Properties
+include $(LOCAL_PATH)/vendor_logtag.mk
+
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
