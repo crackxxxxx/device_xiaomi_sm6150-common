@@ -18,9 +18,6 @@ debug.composition.type=gpu
 persist.sys.composition.type=gpu
 ro.hwui.use_vulkan=false
 
-# IMS
-persist.vendor.qti.telephony.vt_cam_interface=2
-
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
